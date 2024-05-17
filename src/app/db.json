@@ -1,0 +1,21 @@
+{
+    "users": [{
+            "id": 1,
+            "username": "example_user",
+            "email": "user@example.com",
+            "password": "password123",
+            "avatarUrl": "https://example.com/avatar.jpg",
+            "fullName": "John Doe",
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 2,
+            "username": "another_user",
+            "email": "another@example.com",
+            "password": "securepassword",
+            "avatarUrl": "https://example.com/avatar2.jpg",
+            "fullName": "Jane Smith",
+            "bio": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ]
+}

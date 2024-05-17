@@ -1,0 +1,14 @@
+<div *ngIf="showRegistrationForm" class="registration-form-popup">
+    <h1>User Registration</h1>
+    <form [formGroup]="registrationForm" (submit)="registerUser()">
+        <label for="username">Username:</label>
+        <input id="username" type="text" formControlName="username"><br><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" formControlName="email"><br><br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" formControlName="password"><br><br>
+        <label for="avatar">Avatar:</label>
+        <input id="avatar" type="file" (change)="onFileChange($event)"><br><br>
+        <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+    </form>
+</div>

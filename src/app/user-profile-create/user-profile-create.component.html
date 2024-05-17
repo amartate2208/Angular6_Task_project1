@@ -1,0 +1,11 @@
+<h1>User Profile</h1>
+<form [formGroup]="profileForm" (submit)="updateProfile()">
+    <label for="fullName">Full Name:</label>
+    <input id="fullName" type="text" formControlName="fullName"><br><br>
+    <label for="bio">Bio:</label>
+    <textarea id="bio" formControlName="bio"></textarea><br><br>
+    <label for="avatar">Avatar URL:</label>
+    <input id="avatar" type="url" formControlName="avatarUrl"><br><br>
+    <button type="submit" [disabled]="profileForm.invalid">Update Profile</button>
+    <button type="button" (click)="editPhoto()">Edit Photo</button>
+</form>
